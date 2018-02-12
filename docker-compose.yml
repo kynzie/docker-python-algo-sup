@@ -1,0 +1,11 @@
+version: "3.3"
+
+services:
+  algo-sup:
+    restart: always
+    image: jupyter:algo
+    user: "1000:1000"
+    ports:
+      - "8888:8888"
+    volumes:
+      - $WORK_DIR:/home/jovyan/
